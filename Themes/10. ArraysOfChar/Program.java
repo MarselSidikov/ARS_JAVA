@@ -13,7 +13,12 @@ class Program {
 
 		for (int i  = 0; i < 25; i++) {
 			if (counts[i] != 0) {
-				System.out.println((char)(i + 65) + " " + counts[i]);
+				System.out.print((char)(i + 65) + " ");
+				System.out.print(": ");
+				for (int j = 0; j < counts[i]; j++) {
+					System.out.print("-");
+				}
+				System.out.println();
 			}
 		}
 
